@@ -25,6 +25,7 @@ local.properties
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+localbuild.bat
 
 # Gradle
 .gradle/**
