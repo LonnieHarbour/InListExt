@@ -29,3 +29,5 @@ localbuild.bat
 
 # Gradle
 .gradle/**
+/build
+/bin
