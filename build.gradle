@@ -4,7 +4,7 @@ apply plugin: 'java-library'
 apply plugin: 'eclipse'
 
 
-sourceCompatibility = 1.7
+sourceCompatibility = 1.8
 version = '0.0.1-SNAPSHOT'
 jar {
 	manifest {
@@ -21,10 +21,6 @@ repositories {
 	mavenCentral()
 }
 
-task wrapper(type: Wrapper) {
-   gradleVersion = '3.5' //version required
-}
-
 dependencies {	
 	
     // This dependency is exported to consumers, that is to say found on their compile classpath.
@@ -33,9 +29,9 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.mybatis/mybatis
 	//implementation 'org.mybatis:3.2.8'
 
-	compile 'org.mybatis:mybatis:3.2.8'
+	compile 'org.mybatis:mybatis:3.5.6'
 	
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.1'
 }
 
